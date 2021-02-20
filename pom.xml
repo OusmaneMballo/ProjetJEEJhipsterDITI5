@@ -802,6 +802,7 @@
                         </execution>
                     </executions>
                     <configuration>
+                        <!--suppress UnresolvedMavenProperty -->
                         <mainClass>${start-class}</mainClass>
                         <fork>true</fork>
                         <!--
@@ -854,7 +855,7 @@
                                 </goals>
                                 <configuration>
                                     <nodeVersion>${node.version}</nodeVersion>
-                                    <npmVersion>${npm.version}</npmVersion>
+                                    <npmVersion>3.10.8</npmVersion>
                                 </configuration>
                             </execution>
                             <execution>
